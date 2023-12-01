@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(./img.jpg);
+        }
+    </style>
+    <script src="index.js"></script>
+</head>
+
+<body class="pt-60">
+    <div class="w-1/4 border rounded-3xl mx-auto text-center bg-white/50 text-white py-40 backdrop-blur">
+        <!-- game start -->
+        <div id="gameBox" class="mainContent">
+            <button id="start-button" class="text-3xl m-5 bg-blue-700 rounded-lg px-3 py-1"
+                onclick="startgame()">StartGame</button>
+        </div>
+
+        <!-- main box -->
+        <div id="contentBox" style="display: none;">
+            <h1 id="counting-meter" class="text-5xl mx-auto my-14 underline">0</h1>
+            <button id="click-button" class="w-20 h-20 bg-red-700 rounded-full border-4 border-red-400"
+                onclick="counter()">Tap !!!</button>
+        </div>
+    </div>
+</body>
+
+</html>
